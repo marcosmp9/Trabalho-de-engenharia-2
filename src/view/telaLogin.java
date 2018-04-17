@@ -110,6 +110,7 @@ public class telaLogin extends javax.swing.JFrame {
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarActionPerformed
          if(txtLogin.getText().equals("admin")&& txtSenha.getText().equals("admin")){
           JOptionPane.showMessageDialog(null, "Bem vindo ao sistema");
+          new telaPrincipal().setVisible(true);
       } else{
           JOptionPane.showMessageDialog(null, "acesso negado");
           

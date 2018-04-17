@@ -27,6 +27,7 @@ public class telaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         Arquiv = new javax.swing.JMenu();
         User = new javax.swing.JMenu();
@@ -37,11 +38,19 @@ public class telaPrincipal extends javax.swing.JFrame {
         Sobre = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        quit = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 763, Short.MAX_VALUE)
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 564, Short.MAX_VALUE)
+        );
 
         Arquiv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/page.png"))); // NOI18N
         Arquiv.setText("Arquivo");
@@ -52,6 +61,11 @@ public class telaPrincipal extends javax.swing.JFrame {
 
         jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/user_add.png"))); // NOI18N
         jMenuItem5.setText("Cadastrar");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         User.add(jMenuItem5);
 
         jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/user_go.png"))); // NOI18N
@@ -81,35 +95,31 @@ public class telaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(Sobre);
 
-        quit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/cancel.png"))); // NOI18N
-        quit.setText("Sair");
-
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/application_side_contract.png"))); // NOI18N
-        jMenuItem3.setText("Sair tela atual");
-        quit.add(jMenuItem3);
-
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/bullet_delete.png"))); // NOI18N
-        jMenuItem4.setText("Sair do programa");
-        quit.add(jMenuItem4);
-
-        jMenuBar1.add(quit);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jDesktopPane1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        Cadastro telaCad = new Cadastro();
+        jDesktopPane1.add(telaCad);
+        telaCad.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,10 +149,8 @@ public class telaPrincipal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new telaPrincipal().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new telaPrincipal().setVisible(true);
         });
     }
 
@@ -150,15 +158,13 @@ public class telaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu Arquiv;
     private javax.swing.JMenu Sobre;
     private javax.swing.JMenu User;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenu quit;
     // End of variables declaration//GEN-END:variables
 }
