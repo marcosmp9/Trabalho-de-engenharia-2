@@ -1,0 +1,4 @@
+Problema na jFrame CadA = cadastro de alunos
+A foi implementado no jFrame a funçao no botao cadastrar de salvar todos os todos os dados no jFrame Banco. porem nao esta sendo possivel a iteratividade de manipulaçao de objetos entre os paines.
+Soluçao a definir
+
