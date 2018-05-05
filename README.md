@@ -1,6 +1,5 @@
-# Trabralho da universidade #
+# Sistema de gerenciamento de um campeonato de judo #
 
-Sistema de gerenciamento de campeonato de judo.
-Linguagem java.
-*Engenharia de software*
+Projeto da diciplina de **Engenharia de software 2**.
+UFPI
  
