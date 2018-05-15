@@ -1,9 +1,11 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿ultimo passo das telas. fazer tabela para cadastro.
 =======
 Problema na jFrame CadA = cadastro de alunos
 A foi implementado no jFrame a funçao no botao cadastrar de salvar todos os todos os dados no jFrame Banco. porem nao esta sendo possivel a iteratividade de manipulaçao de objetos entre os paines.
 Soluçao sendo discutida
+
+Próximo passo, criar classe atleta !
 
 
 >>>>>>> 20d7a3292e768db8f5244e579a7b9da5aa1a9de9
