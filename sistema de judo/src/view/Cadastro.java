@@ -143,19 +143,19 @@ public class Cadastro extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cadalunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadalunoActionPerformed
-        new CadA().setVisible(true);
+        new CadAluno().setVisible(true);
     }//GEN-LAST:event_cadalunoActionPerformed
 
     private void cadcompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadcompActionPerformed
-         new CadC().setVisible(true);
+         new CadCompetiçao().setVisible(true);
     }//GEN-LAST:event_cadcompActionPerformed
 
     private void cadprofActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadprofActionPerformed
-        new CadP().setVisible(true);
+        new CadProfessor().setVisible(true);
     }//GEN-LAST:event_cadprofActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         new CadA_P().setVisible(true);
+         new CadAlunoProfessor().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
